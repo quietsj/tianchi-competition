@@ -22,7 +22,7 @@
 + type: 渔船label，作业类型 
 
 ## 特征工程
-通过![wisdom ocean](./wisdom-ocean.ipynb)中的渔船轨迹，以及作业
+通过[wisdom ocean](./wisdom-ocean.ipynb)中的渔船轨迹，以及作业
 方式的专业知识，可提取如下基本特征  
 ### 基本特征
 | x | y | 速度 | 方向 | 时间 | 轨迹 |
@@ -50,7 +50,7 @@
 |v_max_v_min|	|		
 |方向(sta)|		|
 |d_max_d_min|	|  
-备注：以不同维度不同的分位点分割，计算其它维度的统计量
++ 备注：以不同维度不同的分位点分割，计算其它维度的统计量
 		
 ## 特征处理及选择
 |VarianceThreshold|StandardScaler|MinMaxScaler|SelectFromModel|
@@ -63,7 +63,7 @@
 |train| 1.0 | 1.0 | 1.0 | 0.9996|0.9852|0.6018|1.0|
 |val|0.9126|**0.9208**|0.9183|0.8972|0.7531|0.5964|0.7650|  
 + 评分函数  
-f1_score(y_val, pre_val, average='macro')  
+`f1_score(y_val, pre_val, average='macro')`  
 
 ## 模型集成
 |5_fold|model|model|model|model|model|      |model_1|model_2|...| |svm(kernel='linear')|
